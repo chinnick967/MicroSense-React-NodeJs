@@ -42,9 +42,9 @@ app.post('/jobs', function (req, res) {
   return res.sendStatus(200);
 });
 
-app.use(express.static(__dirname + '/src')); 
+app.use(express.static(__dirname + '/dist')); 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'src/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
 app.listen(3000, function() {  

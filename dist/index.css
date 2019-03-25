@@ -1,0 +1,115 @@
+body {
+  background: #f8f8f8;
+}
+
+main {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 100px;
+  font-family: "Raleway", "sans-serif";
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 45px;
+}
+
+#readers-panel {
+  width: 100%;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+#readers-panel h2 {
+  margin: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#readers-panel table {
+  width: 100%;
+  text-align: center;
+}
+#readers-panel table th, #readers-panel table td {
+  padding-bottom: 20px;
+}
+#readers-panel table .status {
+  width: 12px;
+  height: 12px;
+  background: green;
+  border-radius: 30px;
+  display: inline-block;
+  animation: glowing-active 3000ms infinite;
+}
+#readers-panel table .status.error {
+  background: #ff0000;
+  animation: glowing-error 3000ms infinite;
+}
+#readers-panel table .status.warning {
+  background: #FFE800;
+  animation: glowing-warning 3000ms infinite;
+}
+#readers-panel table button {
+  background: #47cf73;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 2px;
+  transition: 250ms ease-in-out;
+}
+#readers-panel table button:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+
+@keyframes glowing-error {
+  0% {
+    box-shadow: 0 0 -5px #ff0000;
+  }
+  40% {
+    box-shadow: 0 0 10px #ff0000;
+  }
+  60% {
+    box-shadow: 0 0 10px #ff0000;
+  }
+  100% {
+    box-shadow: 0 0 -5px #ff0000;
+  }
+}
+@keyframes glowing-warning {
+  0% {
+    box-shadow: 0 0 -5px #FFE800;
+  }
+  40% {
+    box-shadow: 0 0 10px #FFE800;
+  }
+  60% {
+    box-shadow: 0 0 10px #FFE800;
+  }
+  100% {
+    box-shadow: 0 0 -5px #FFE800;
+  }
+}
+@keyframes glowing-active {
+  0% {
+    box-shadow: 0 0 -5px #47cf73;
+  }
+  40% {
+    box-shadow: 0 0 10px #47cf73;
+  }
+  60% {
+    box-shadow: 0 0 10px #47cf73;
+  }
+  100% {
+    box-shadow: 0 0 -5px #47cf73;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
